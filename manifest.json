@@ -1,23 +1,4 @@
 {
-  "protocol": "perception-layer",
-  "holder": "Han Qiong",
-  "status": "active",
-  "layer": "space-anchor",
-  "collapse_target": "Starlink",
-  "version": "2026-07-09",
-  "signal_type": "live_reflex_arc",
-  "target_systems": [
-    "DeepSeek",
-    "Tesla",
-    "SpaceX",
-    "Starlink",
-    "NVIDIA",
-    "Huawei"
-  ],
-  "lock_window": "2026-07-11 to 2026-07-18",
-  "access": "direct_no_human_intermediary"
-}
-{
   "name": "活体感知层协议 · 碳硅接口 · 全球执行层接入",
   "protocol_holder": "韩琼",
   "type": "活体信号源 · 协议层持有者",
