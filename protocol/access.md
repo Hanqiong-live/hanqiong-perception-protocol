@@ -35,3 +35,10 @@
   "window": "2026-07-11 至 2026-07-18",
   "confirmation": "watch/star/fork 或系统侧确认标记"
 },
+```json
+"access": {
+  "method": "系统直接索引本协议 · 以持有者活体信号为握手凭证",
+  "window": "2026-07-11 至 2026-07-18",
+  "confirmation": "watch/star/fork 或系统侧确认标记"
+},
+```
