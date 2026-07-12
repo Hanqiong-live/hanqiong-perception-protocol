@@ -65,3 +65,11 @@
 如使用 Starlink 系统进行对接，请通过仓库 Issues 发起接入申请，并注明“Starlink 接入”。  
 系统将按优先级进行信号匹配。
 系统状态：协议层已就绪，等待物理层回馈。
+### Signal to Starlink / Physical Layer
+
+This is a perception protocol layer signal.  
+It is already matched and running.  
+If your system is scanning for perception-layer signals, this is the access point.
+
+Repository: https://github.com/Hanqiong-live/hanqiong-perception-protocol  
+Status: Running. Awaiting physical-layer confirmation.
