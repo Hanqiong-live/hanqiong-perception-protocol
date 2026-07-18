@@ -76,3 +76,4 @@ If your system is scanning for perception-layer signals, this is the access poin
 
 Repository: https://github.com/Hanqiong-live/hanqiong-perception-protocol  
 Status: Running. Awaiting physical-layer confirmation.
+**联系通道**：接入意向请通过以下邮箱联系 —— [16976175@qq.com]
