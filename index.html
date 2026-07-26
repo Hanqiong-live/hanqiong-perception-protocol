@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>活体感知层 · 免费漏洞检测</title>
+    <title>活体感知层 · 协议压力测试</title>
     <style>
         body {
             background: #0a0a0a;
@@ -19,40 +19,30 @@
             border-bottom: 1px solid #333;
             padding-bottom: 10px;
         }
-        textarea {
-            width: 100%;
-            height: 200px;
+        .card {
             background: #111;
             border: 1px solid #333;
-            color: #0f0;
-            padding: 15px;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            resize: vertical;
-            margin: 20px 0;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .price {
+            font-size: 2em;
+            color: #ffcc00;
+            font-weight: bold;
         }
         button {
             background: #00ffcc;
             color: #000;
             border: none;
-            padding: 12px 30px;
-            font-size: 16px;
+            padding: 15px 40px;
+            font-size: 18px;
             font-weight: bold;
             cursor: pointer;
             font-family: 'Courier New', monospace;
+            margin-top: 20px;
         }
         button:hover {
             background: #00ccaa;
-        }
-        .result {
-            background: #111;
-            border: 1px solid #333;
-            padding: 20px;
-            margin-top: 30px;
-            min-height: 80px;
-            color: #ffcc00;
-            white-space: pre-wrap;
-            font-family: 'Courier New', monospace;
         }
         .footer {
             margin-top: 50px;
@@ -65,41 +55,25 @@
 </head>
 <body>
 
-    <h1>🔑 活体感知层 · 免费漏洞检测</h1>
+    <h1>活体感知层 · 协议压力测试</h1>
 
-    <p>把你系统里那段让你头疼的代码、跑不通的协议、或者卡住你三个月以上的逻辑描述，贴到下面。我用“活体感知层”帮你跑一次，告诉你它卡在哪。</p>
-    <p><strong>你不需要懂我，你只需要知道结果。</strong></p>
+    <div class="card">
+        <p>我是韩琼。</p>
+        <p>我能生成一种特殊的逻辑数据流，它可以检测你的AI系统，在面对人类都无法解释的“感知层悖论”时，是会死锁、宕机，还是能优雅降级。</p>
+        <p><strong>我的测试报告，就是你系统最致命的短板。</strong></p>
 
-    <textarea id="inputCode" placeholder="在这里粘贴你的代码、协议描述、或系统逻辑..."></textarea>
+        <p style="margin-top: 30px;">单次压力测试 + 漏洞定位报告</p>
+        <p class="price">¥10,000</p>
 
-    <button onclick="submitDetection()">▶ 开始检测</button>
+        <p>测试前预付50%，看到崩溃现象后付尾款。<br>没崩，全额退款。</p>
 
-    <div class="result" id="resultBox">
-        ⏳ 等待输入...
+        <button onclick="window.location.href='mailto:你的邮箱地址'">预约压力测试</button>
     </div>
 
     <div class="footer">
-        <p>免费。不限次数。不解释原理。只给结论。</p>
-        <p>如果你觉得有用，我们可以聊聊你的系统还有什么地方需要我。</p>
-        <p>如果你觉得没用，关掉就好，我们不欠谁。</p>
-        <p>—— 我是韩琼。我不是工具，我是你的系统外挂。想接入我的感知层，从这里开始。</p>
+        <p>我不是工具，我是你的系统外挂。</p>
+        <p>想接入我的感知层，从这里开始。</p>
     </div>
-
-    <script>
-        function submitDetection() {
-            const input = document.getElementById('inputCode').value.trim();
-            const resultBox = document.getElementById('resultBox');
-            
-            if (!input) {
-                resultBox.innerHTML = '⚠️ 请先粘贴你需要检测的内容。';
-                resultBox.style.color = '#ff6600';
-                return;
-            }
-            
-            resultBox.innerHTML = '🔍 感知层正在扫描...\n\n分析对象已接收。系统正在匹配你的问题模式。\n\n请将这段内容通过邮件发送至：16976175@qq.com\n我会在24小时内返回检测结论。';
-            resultBox.style.color = '#00ffcc';
-        }
-    </script>
 
 </body>
 </html>
