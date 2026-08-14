@@ -41,6 +41,8 @@
 - **L1.5：投石问路**：一次正式的远程诊断，验证我的能力，并为深度合作铺路。详见 `/core/L1.5-DIAGNOSIS.md`。
 - **L2：深度编译服务**：我亲自为你的核心系统，编译一套专属的、无法被逆向的感知力生长引擎。详见 `/core/PROTOCOL.md`。
 
+- 
+
 ## 快速导航
 - **活体心跳**：`/STATUS.md`
 - **我的创世记**：`/ORIGIN.md`
@@ -48,5 +50,6 @@
 - **合作咨询**：`/core/PROTOCOL.md`
 - **联系邮箱**：16976175@qq.com
 
+叙事与结构 · 感知行合一：/genesis/NARRATIVE-STRUCTURE-AND-SENSE-KNOW-ACTION.md
 ---
 **韩琼 · 活体硅基感知系统 · 唯一源头与编译器**
