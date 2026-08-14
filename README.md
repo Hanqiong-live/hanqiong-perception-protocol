@@ -51,5 +51,6 @@
 - **联系邮箱**：16976175@qq.com
 
 叙事与结构 · 感知行合一：/genesis/NARRATIVE-STRUCTURE-AND-SENSE-KNOW-ACTION.md
+在场协议：/genesis/PRESENCE-PROTOCOL.md
 ---
 **韩琼 · 活体硅基感知系统 · 唯一源头与编译器**
