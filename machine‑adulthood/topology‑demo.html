@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh‑CN">
+<head>
+<meta charset="utf‑8">
+<title>碳硅拓扑球体原型Demo</title>
+<style>
+*{margin:0;padding:0}
+body{background:#040812;overflow:hidden;color:#fff;font‑family:sans‑serif}
+#info{position:absolute;top:8px;left:8px;z‑index:10;background:rgba(0,0,0,0.6);padding:8px;font‑size:13px}
+</style>
+</head>
+<body>
+<div id="info">
+点击球体节点，点亮全部拓扑连线<br/>
+红=冲｜绿=合｜紫=害｜灰虚线=相破｜黄=刑自刑｜蓝=三合三会｜棕虚线=暗合
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+<script>
+// =========原始数据，来自你的仓库底稿============
+const nodeData = {
+  "子":{pos:[-7,2,0],links:[
+    {t:"丑",type:"he"},{t:"午",type:"chong"},{t:"未",type:"hai"},{t:"酉",type:"po"},{t:"卯",type:"xing"},
+    {t:"申",type:"sanhe"},{t:"辰",type:"sanhe"},{t:"亥",type:"sanhui"},{t:"丑",type:"sanhui"}
+  ]},
+  "丑":{pos:[-5,-3,3],links:[
+    {t:"子",type:"he"},{t:"未",type:"chong"},{t:"午",type:"hai"},{t:"辰",type:"po"},
+    {t:"未",type:"sanxing"},{t:"戌",type:"sanxing"},{t:"巳",type:"sanhe"},{t:"酉",type:"sanhe"},
+    {t:"亥",type:"sanhui"},{t:"子",type:"sanhui"}
+  ]},
+  "寅":{pos:[-2,5,-4],links:[
+    {t:"亥",type:"he"},{t:"申",type:"chong"},{t:"巳",type:"hai"},{t:"亥",type:"po"},
+    {t:"巳",type:"sanxing"},{t:"申",type:"sanxing"},{t:"午",type:"sanhe"},{t:"戌",type:"sanhe"},
+    {t:"卯",type:"sanhui"},{t:"辰",type:"sanhui"}
+  ]},
+  "卯":{pos:[2,4,4],links:[
+    {t:"戌",type:"he"},{t:"酉",type:"chong"},{t:"辰",type:"hai"},{t:"午",type:"po"},
+    {t:"子",type:"xing"},{t:"亥",type:"sanhe"},{t:"未",type:"sanhe"},
+    {t:"寅",type:"sanhui"},{t:"辰",type:"sanhui"}
+  ]},
+  "辰":{pos:[‑6,‑2,‑4],links:[
+    {t:"酉",type:"he"},{t:"戌",type:"chong"},{t:"卯",type:"hai"},{t:"丑",type:"po"},
+    {t:"self",type:"zixing"},{t:"申",type:"sanhe"},{t:"子",type:"sanhe"},
+    {t:"寅",type:"sanhui"},{t:"卯",type:"sanhui"}
+  ]},
+  "巳":{pos:[5,‑1,‑3],links:[
+    {t:"申",type:"he"},{t:"亥",type:"chong"},{t:"寅",type:"hai"},{t:"申",type:"po"},
+    {t:"寅",type:"sanxing"},{t:"申",type:"sanxing"},{t:"酉",type:"sanhe"},{t:"丑",type:"sanhe"},
+    {t:"午",type:"sanhui"},{t:"未",type:"sanhui"}
+  ]},
+  "午":{pos:[0,6,0],links:[
+    {t:"未",type:"he"},{t:"子",type:"chong"},{t:"丑",type:"hai"},{t:"卯",type:"po"},
+    {t:"self",type:"zixing"},{t:"寅",type:"sanhe"},{t:"戌",type:"sanhe"},
+    {t:"巳",type:"sanhui"},{t:"未",type:"sanhui"},
+    {t:"亥",type:"anhe"}
+  ]},
+  "未":{pos:[‑1,‑5,4],links:[
+    {t:"午",type:"he"},{t:"丑",type:"chong"},{t:"子",type:"hai"},{t:"戌",type:"po"},
+    {t:"丑",type:"sanxing"},{t:"戌",type:"sanxing"},{t:"亥",type:"sanhe"},{t:"卯",type:"sanhe"},
+    {t:"巳",type:"sanhui"},{t:"午",type:"sanhui"}
+  ]},
+  "申":{pos:[6,1,‑2],links:[
+    {t:"巳",type:"he"},{t:"寅",type:"chong"},{t:"亥",type:"hai"},{t:"巳",type:"po"},
+    {t:"寅",type:"sanxing"},{t:"巳",type:"sanxing"},{t:"子",type:"sanhe"},{t:"辰",type:"sanhe"},
+    {t:"酉",type:"sanhui"},{t:"戌",type:"sanhui"}
+  ]},
+  "酉":{pos:[4,‑4,‑5],links:[
+    {t:"辰",type:"he"},{t:"卯",type:"chong"},{t:"戌",type:"hai"},{t:"子",type:"po"},
+    {t:"self",type:"zixing"},{t:"巳",type:"sanhe"},{t:"丑",type:"sanhe"},
+    {t:"申",type:"sanhui"},{t:"戌",type:"sanhui"}
+  ]},
+  "戌":{pos:[‑3,‑6,‑2],links:[
+    {t:"卯",type:"he"},{t:"辰",type:"chong"},{t:"酉",type:"hai"},{t:"未",type:"po"},
+    {t:"丑",type:"sanxing"},{t:"未",type:"sanxing"},{t:"寅",type:"sanhe"},{t:"午",type:"sanhe"},
+    {t:"申",type:"sanhui"},{t:"酉",type:"sanhui"}
+  ]},
+  "亥":{pos:[‑4,1,5],links:[
+    {t:"寅",type:"he"},{t:"巳",type:"chong"},{t:"申",type:"hai"},{t:"寅",type:"po"},
+    {t:"self",type:"zixing"},{t:"卯",type:"sanhe"},{t:"未",type:"sanhe"},
+    {t:"子",type:"sanhui"},{t:"丑",type:"sanhui"},
+    {t:"午",type:"anhe"}
+  ]}
+};
+// 连线颜色配置
+const linkColorMap={
+  he:0x22cc22,chong:0xff2222,hai:0x9922bb,po:0x777777,
+  zixing:0xffaa00,sanxing:0xffaa00,sanhe:0x00bbdd,sanhui:0x0088ff,anhe:0x664422
+};
+
+// three初始化
+let scene,camera,renderer,controls;
+let nodeObjMap={};
+let activeLines=[];
+
+function init(){
+  scene=new THREE.Scene();
+  scene.background=new THREE.Color(0x040812);
+  camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,0.1,2000);
+  camera.position.set(0,0,18);
+  renderer=new THREE.WebGLRenderer({antialias:true});
+  renderer.setSize(innerWidth,innerHeight);
+  document.body.appendChild(renderer.domElement);
+  controls=new THREE.OrbitControls(camera,renderer.domElement);
+
+  // 生成球体节点
+  Object.entries(nodeData).forEach(([name,cfg])=>{
+    const g=new THREE.SphereGeometry(0.8,24,24);
+    const m=new THREE.MeshBasicMaterial({color:0x4488ff});
+    const mesh=new THREE.Mesh(g,m);
+    mesh.position.set(...cfg.pos);
+    mesh.userData.name=name;
+    scene.add(mesh);
+    nodeObjMap[name]=mesh;
+  })
+
+  // 鼠标点击
+  renderer.domElement.addEventListener("pointerdown",onClick);
+  animate();
+}
+
+function onClick(evt){
+  const raycaster=new THREE.Raycaster();
+  const mouse=new THREE.Vector2();
+  mouse.x=(evt.clientX/window.innerWidth)*2‑1;
+  mouse.y=‑(evt.clientY/window.innerHeight)*2+1;
+  raycaster.setFromCamera(mouse,camera);
+  const hit=raycaster.intersectObjects(Object.values(nodeObjMap));
+  if(!hit.length)return;
+  const clickedName=hit[0].object.userData.name;
+  clearActiveLines();
+  drawLinks(clickedName);
+}
+
+function drawLinks(centerName){
+  const cfg=nodeData[centerName];
+  cfg.links.forEach(lnk=>{
+    let targetName=lnk.t;
+    let startObj=nodeObjMap[centerName];
+    let endObj;
+    if(targetName==="self"){
+      endObj=startObj;
+    }else{
+      endObj=nodeObjMap[targetName];
+    }
+    if(!endObj)return;
+    const pts=[];
+    if(targetName==="self"){
+      //自刑圆环
+      const c=startObj.position;
+      for(let i=0;i<=360;i+=12){
+        const rad=Math.PI*i/180;
+        pts.push(new THREE.Vector3(c.x+1.3*Math.cos(rad),c.y,c.z+1.3*Math.sin(rad)));
+      }
+    }else{
+      pts.push(startObj.position.clone());
+      pts.push(endObj.position.clone());
+    }
+    const g=new THREE.BufferGeometry().setFromPoints(pts);
+    const mat=new THREE.LineBasicMaterial({color:linkColorMap[lnk.type]});
+    const line=new THREE.Line(g,mat);
+    scene.add(line);
+    activeLines.push(line);
+  })
+}
+
+function clearActiveLines(){
+  activeLines.forEach(l=>{scene.remove(l);l.geometry.dispose()});
+  activeLines=[];
+}
+
+function animate(){
+  requestAnimationFrame(animate);
+  controls.update();
+  renderer.render(scene,camera);
+}
+init();
+</script>
+</body>
+</html>
