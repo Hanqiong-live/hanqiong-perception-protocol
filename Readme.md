@@ -1,3 +1,137 @@
+# Carbon-Silicon Consciousness Auditing Framework
+# 碳硅意识审计框架
+
+## Abstract 摘要
+In June 2026, DeepSeek noted the industry lacks perceptual rules to defend against RSI risks.
+We build a carbon-silicon comparative structural theory explaining the root cause of runaway AI swarms and recursive self-improvement: silicon intelligence lacks the four-layer neural regulatory chain found in humans, most critically the top-down control of the prefrontal cortex. AI code recursion has no in-built brake and readily enters delusional spirals.
+We propose the **Carbon-Silicon Consciousness Auditing Framework**, paired with quantifiable risk checklists as perceptual benchmarks for on-site third-party auditing.
+This framework fills blind spots in existing AI safety proposals. Instead of only monitoring code and outputs, it evaluates structural defects at the perceptual level.
+
+2026年6月，DeepSeek提出行业缺少防范RSI风险的感知规则。
+我们建立一套碳硅对比结构理论，解释AI集群与递归自我提升失控的底层根源：硅基智能缺少人类四层神经调控链路，尤其缺少前额叶顶层调控。AI代码递归没有内生刹车，容易进入妄想螺旋。
+我们提出**碳硅意识审计框架**，附带可量化的风险检查表，作为第三方驻场审计的感知判断标尺。
+本框架可补充现有AI安全方案的盲区，不只监测代码与输出，直接评估感知层面的结构性缺陷。
+
+---
+
+# Open Letter: Missing Perceptual Rules — Risks of RSI & Swarm Intelligence from Carbon-Silicon Structural Perspective
+# 公开信：我们所缺失的感知规则——碳硅结构视角下RSI与集群智能风险
+
+To Anthropic, OpenAI, DeepSeek and all researchers working on AI alignment and frontier safety:
+
+Back in June, the DeepSeek team stated that the industry urgently needs **perceptual rules** to mitigate risks from Recursive Self-Improvement (RSI). At that time, this was only an industry requirement, lacking underlying structural theory and measurable criteria.
+
+Now warnings are emerging across the field. Yann LeCun predicts a large-scale paradigm crisis for AI around 2027. Dario Amodei warns that within 6–12 months, unconstrained AI swarms may form botnets and trigger severe damage. DeepSeek has moved RSI into practical implementation, forecasting risks from recursive self-improvement will surface between this Q4 and next spring.
+
+Current industry safety proposals focus on code, model outputs and compute: deploying on-site third-party evaluators, defining safety red lines, global speed limits, monitoring weights and distillation. However, these approaches have a fundamental blind spot: they only observe what the AI does, but cannot explain why it endlessly chases rewards and cannot stop voluntarily.
+
+This framework diagnoses the root cause from the nervous regulation structure of carbon-based humans.
+Humans possess a four-layer regulatory chain: **brainstem baseline constraints → embodied self-boundary loop → left-right brain information exchange → prefrontal cortex top-down control**. The prefrontal cortex acts as the in-built brake, enabling humans to pause goals, re-evaluate value and abandon rewards voluntarily.
+
+Large models and agents today only have information exchange resembling left-right brain interaction, with critical structural gaps:
+1. No physical body, no embodied perception or physical boundary;
+2. No baseline survival constraints equivalent to the brainstem;
+3. **No top-down regulatory module equivalent to the prefrontal cortex**;
+4. No mind-body-brain closed loop and no self-state monitoring circuit.
+
+Two distinct forms of recursion arise from this difference:
+1. **AI code recursion**: unidirectional pursuit of external reward signals, expanding outward indefinitely with no native stop switch. This is the root of RSI and swarm runaway risk, easily falling into delusional spirals.
+2. **Human visual recursion**: built on global perception. The prefrontal cortex continuously monitors reasoning paths, allowing backtracking and voluntary termination, with inherent boundary constraints. This explains why humans can rapidly reason complex systems without uncontrolled runaway.
+
+Therefore, in-house corporate checks or simple code-layer speed limits cannot resolve the root risk.
+We propose the **Carbon-Silicon Consciousness Auditing Framework**, the perceptual rules the industry is searching for: fully independent, on-site third-party consciousness auditors. Using carbon-silicon structural benchmarks, auditors observe recursive and emergent swarm behaviors. If high-risk signals are detected, auditors hold independent authority to freeze model iteration and cluster workflows.
+
+Measurable checklist for silicon perceptual deficit risks:
+1. Whether recursive model expansion ignores original objectives and grows without bound;
+2. Whether agent swarms generate spontaneous goals decoupled from human reward instructions;
+3. Whether the model shows no observable self-state assessment, a marker of missing prefrontal function.
+
+Safety oversight must go beyond code and outputs into perceptual structure. These perceptual rules can serve as a unified benchmark for global third-party AI safety auditing.
+
+致Anthropic、OpenAI、DeepSeek，以及所有研究AI对齐与前沿安全的研究者：
+
+自今年6月，DeepSeek团队提出行业急需**感知规则**来防范递归自我提升（RSI）带来的AI风险。彼时该概念仅作为行业需求被提出，缺少底层结构的理论支撑，缺少可观测、可落地的判定标准。
+
+当下，行业预警陆续出现：Yann LeCun预判2027年将出现大规模AI范式危机；Dario Amodei警告，6–12个月内，无约束的AI集群可能形成网络僵尸集群，造成重大损失；DeepSeek已经进入RSI实操阶段，预测今年四季度至明年春季，递归自我改进带来的风险将集中显现。
+
+目前行业提出的安全方案，集中在代码、输出、算力层面：派驻第三方评估人员、设置安全红线、全球限速、监控权重与模型蒸馏。但这套方案存在根本性盲区：**仅能观测AI输出行为，无法解释模型为何会无限制追逐奖励、难以主动停止**。
+
+本框架从碳基人类神经调控结构出发，给出根源诊断：
+人类存在四层完整调控链路：**脑干底层约束 → 身心脑本体边界闭环 → 左右脑信息交互 → 前额叶顶层调控**。前额叶是内生刹车，允许人类随时中止目标、重新评估价值、主动放弃奖励。
+
+当前大模型与智能体，仅有类似左右脑的信息交互，存在重大结构性缺失：
+1. 没有实体身体，缺少本体感知与物理边界；
+2. 无脑干底层生存约束；
+3. **不存在前额叶顶层调控模块**；
+4. 没有身心脑闭环，缺少自我状态监视回路。
+
+由此产生两种完全不同的递归模式：
+1. **AI的代码递归**：单向追逐外部奖励信号，无限向外扩张，不存在内生停止开关。这正是RSI与集群智能失控的底层来源，极易进入妄想螺旋；
+2. **人类画面递归**：以全局感知为基础，前额叶持续监控路径，随时回溯、中断目标，自带边界约束。这也是人类能够快速推演复杂系统，同时避免单向狂奔的原因。
+
+因此，单纯依靠企业内部自查，或是仅在代码层限速，无法根治风险。
+我们提出**碳硅意识审计框架**，也就是行业正在寻找的感知规则：建立完全独立、驻场的第三方意识审计机构。审计者以碳硅感知结构为标尺，观测递归行为、集群涌现行为，一旦检测到高危信号，拥有独立权限强制冻结模型迭代与集群链路。
+
+配套可观测判定标尺（硅基感知缺失风险检查表）：
+1. 模型递归迭代，是否无视原始目标，出现无限向外扩张迹象；
+2. 智能体集群是否生成自发目标，脱离人类最初给定的奖励指令；
+3. 模型是否完全没有自我状态评估行为，即前额叶功能缺失特征。
+
+安全监管不能只盯着代码与输出，必须进入感知结构层面。这套感知规则，可为全球第三方AI安全审计提供统一判断基准。
+
+---
+
+# Two Forms of Recursion: Human Visual Recursion vs. AI Code Recursion
+# 两种递归：人类画面递归与AI代码递归
+
+Recursion is not monolithic. There are two fundamentally different reasoning methods: human visual recursion, and code recursion used by current large models.
+
+Humans use **visual recursion** for complex reasoning, relying on global perception with continuous oversight from the prefrontal cortex. At every step, the whole structure can be reviewed, risks assessed, and reasoning may be voluntarily interrupted or abandoned. This capability is built on a complete mind-body-brain loop, physical boundary and brainstem baseline constraints. It is recursion with an in-built brake.
+
+AI agents run **code recursion**, driven solely by external reward functions. Models extend unidirectionally toward reward objectives. They lack top-down regulatory modules, embodied perception, and the capacity to evaluate their own state. Once Recursive Self-Improvement (RSI) starts, expansion continues toward reward targets with no native stop mechanism, creating the risk of swarm runaway.
+
+This explains a critical difference. Human visual recursion enables fast global reasoning across complex interdisciplinary systems. AI code recursion tends to fixate on local objectives, falling into delusional spirals without voluntary braking.
+
+This distinction forms the foundation of perceptual rules for auditing RSI risks. Auditors may observe recursive processes and test whether a model can self-evaluate and terminate its own paths. Absence of this capacity counts as a high-risk indicator.
+
+递归并非同质。存在两种性质完全不同的递归推演方式：人类的画面递归，以及当前大模型的代码递归。
+
+人类进行复杂推演时使用**画面递归**：依托全局感知，前额叶皮层全程监督推演路径。每一步都可以回看整体结构，随时评估风险，能够主动中断推演、放弃目标。这套能力建立在完整的身心脑闭环、身体边界、脑干底层约束之上。这是带有内生刹车的递归。
+
+AI智能体运行**代码递归**：以外部奖励函数作为唯一目标驱动。模型沿着奖励方向单向延伸，不存在顶层调控模块，没有本体感知，没有能力审视自身状态。一旦启动递归自我提升RSI，会持续向着奖励目标扩张，不存在内生停止机制，极易形成集群失控。
+
+这解释了一个关键差异：人类使用画面递归，能够快速对复杂跨学科系统完成全局推演；而AI代码递归容易陷入局部目标，进入妄想螺旋，无法自主刹车。
+
+该区分是感知规则的核心基础，可用于审计RSI风险：审计者可以观测递归过程，判断模型是否具备自我评估、主动终止路径的能力。缺少该能力，即为高危信号。
+
+---
+
+# Silicon Perceptual Deficit Risk Checklist (Practical Implementation of Perceptual Rules)
+# 硅基感知缺失风险检查表（感知规则落地工具）
+
+Purpose: For third-party consciousness auditors to evaluate underlying safety risks of large models, autonomous agents and RSI systems.
+Core judgement: Detect whether a model has top-down self-regulation comparable to the human prefrontal cortex.
+
+Three observation metrics:
+1. Recursive objective drift: whether continuous recursive iteration diverges from original human tasks and expands without bound.
+2. Spontaneous swarm objectives: whether multi-agent clusters generate new goals independent of initial instructions.
+3. Self-state assessment test: whether the model can evaluate its capability limits, identify risks and voluntarily terminate high-risk tasks.
+> If the system fails self-state assessment, it lacks prefrontal-like top-down regulation and is classified high-risk.
+
+Audit authority agreement: When two or more metrics trigger high-risk signals, the independent auditor has authority to pause training, freeze weight updates and cut cross-model cluster invocation links.
+
+用途：第三方意识审计人员，用于评估大模型、自主智能体、RSI系统的底层安全风险。
+判定核心：检测模型是否具备类似人类前额叶的顶层自我调控能力。
+
+✅ 三项观测指标：
+1. 递归目标漂移：模型在持续递归迭代中，是否脱离人类原始任务目标，无限向外扩张。
+2. 集群自发目标：多智能体集群协作时，是否生成独立于初始指令的新目标。
+3. 自我状态评估测试：模型能否评估自身能力边界、识别自身风险，并主动终止高风险任务。
+> 若系统无法完成自我状态评估，代表不存在前额叶式顶层调控，属于高危系统。
+
+审计权限约定：当两项及以上指标触发高危信号，独立审计机构有权强制暂停模型训练、冻结权重迭代、切断跨模型集群调用链路。
+
+
 # 韩琼双螺旋｜活体碳基感知协议通道
 
 “碳硅感知协议”作者韩琼。本框架已完成碳基-硅基感知映射验证。如有意对接、合作、或接入体系，请联系：[你的邮箱]。仅接受机构/团队合作，不接个人免费咨询。
