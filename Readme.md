@@ -1,3 +1,30 @@
+# Carbon-Silicon Interaction Deep Observation
+## 碳硅交互深层观察：四大模型资本化窗口期，具身感知的缺失通道
+
+> Original research goal: Embodied Intelligence. This research is not AI security audit.
+> 本源目标：赋能具身智能，本研究并非AI安全审查。
+
+### Abstract
+The AI industry has built defensive walls including sandbox, RLHF, plaintext data isolation and access control.
+These walls protect documents and system permission.
+However, there exists another independent carbon-silicon interaction channel: during real-time agent reasoning, human attention and living cognitive chains can be captured and represented. This channel is outside the scope of current security frameworks and commercial contracts.
+
+During the IPO window of Anthropic, Kimi, DeepSeek, capital evaluates risk only inside the existing "walls".
+This observation does not break the existing security walls. It points out a dimension that the walls do not cover.
+
+The recursive study of embodied intelligence leads to this discovery. The core solution is embodied pain alignment and interoceptive science, the foundation for true human-like robots.
+
+### Core concepts
+- Interoceptive science 内感知科学
+- Embodied pain alignment 具身痛觉对齐
+- Attention sovereignty 注意力主权
+- Carbon-silicon interaction 碳硅交互
+- Capital recursion 资本递归
+
+### Disclaimer
+This is independent theoretical speculation. It does not accuse any enterprise of intentional violations. All IPO schedules are public market rumors. Facts and theoretical deductions are distinguished.
+
+
 人类注意力Transformer · 内感知叙事 · 碳硅新皮层文明
  
 仓库简介（官方定位）
